@@ -3,9 +3,59 @@
 	
 	Requirements:
 	The main container should be 500px wide and centered.
+
 	
 	Colors:
 	dark orange color: #DB4006
 	light orange color: #ec9371
 
 ******/
+.body {
+	margin:0;
+	overflow:hidden'
+}
+.container {
+	width: 500px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	align-content: space-between;
+	margin: auto;
+
+}
+.item {
+	border-radius: 25px;
+	border: 1px solid black;
+	overflow: hidden;
+	margin:5px;
+	
+}
+.description{
+	background-color: #ec9371;
+	height:auto;
+	width:auto;
+	text-align: left;
+	display: inline-block;
+	/*span background color across width 
+	without needing to wrap both child elements in it's own wrapper */
+	margin: 0 -9999rem;
+  	padding: 1rem 9999rem;
+}
+.title{
+	display: inline-block;
+	color: white;
+	background-color: #DB4006;
+	text-align: left;
+	height: auto;
+	/*span background color across width 
+	without needing to wrap both child elements in it's own wrapper */
+	margin: 0 -9999rem;
+  	padding: 0.25rem 9999rem;
+}
+.close{
+	position: relative;
+	float:right;
+	margin-right:10px;
+	font-size:24px;
+}
